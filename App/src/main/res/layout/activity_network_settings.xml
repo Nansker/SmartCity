@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @Author 南山客
+  ~ @Email 2771557108@qq.com
+  ~ @Create 2021/09/26 19:23
+  ~ @Description
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bck"
+    android:orientation="vertical"
+    tools:context="com.nansk.smartcity.activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="@drawable/btn_bold_blue"
+            android:padding="10dp"
+            android:src="@mipmap/phone" />
+
+        <EditText
+            android:id="@+id/ip_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="格式如：127.0.0.1:8080" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_blue_style"
+        android:stateListAnimator="@null"
+        android:text="保存"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="当前连接的服务器IP："
+            android:textColor="@color/gray_66"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/current_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="124.93.196.45:10001"
+            android:textColor="@color/theme_orange"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="为方便测试，提供以下快捷输入方式\n点击可自动填充"
+            android:textColor="@color/gray_66"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/public_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="公网IP：124.93.196.45:10001"
+            android:textColor="@color/gray_66"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/school_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="学校服务器IP（B408教室）：\n192.168.10.162:10001"
+            android:textColor="@color/gray_66"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="注意：\n如果在App应用内修改了服务器IP，且用户已经为登录状态，为保持用户信息的更新，账号将自动退出登录并重启APP。"
+            android:textColor="@color/gray_66"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</LinearLayout>

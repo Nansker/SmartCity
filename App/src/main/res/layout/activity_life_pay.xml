@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @Author 南山客
+  ~ @Email 2771557108@qq.com
+  ~ @Create 2021/09/28 10:47
+  ~ @Description
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bck"
+    android:orientation="vertical"
+    tools:context=".activity.lifepay.LifePayActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    app:indicator_height="6dp"
+                    app:indicator_margin="3dp"
+                    app:indicator_width="6dp" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="常用缴费"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_gray" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/living_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:overScrollMode="never" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/weather_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+
+                <ImageView
+                    android:id="@+id/weather_iv"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/weather" />
+
+                <TextView
+                    android:id="@+id/weather_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="暂无天气数据"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <ViewFlipper
+                    android:id="@+id/weather_vf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="生活资讯"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/more_btn"
+                        android:layout_width="60dp"
+                        android:layout_height="24dp"
+                        android:background="@android:color/transparent"
+                        android:text="更多"
+                        android:textColor="@color/gray_99" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_gray" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/press_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:overScrollMode="never" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/theme_bck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/autoPay_btn"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_blue_style"
+            android:stateListAnimator="@null"
+            android:text="自动缴费"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="1dp" />
+
+        <Button
+            android:id="@+id/accountManage_btn"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_blue_style"
+            android:stateListAnimator="@null"
+            android:text="户号管理"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

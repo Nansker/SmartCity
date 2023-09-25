@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @Author 南山客
+  ~ @Email 2771557108@qq.com
+  ~ @Create 2021/09/10 19:27
+  ~ @Description
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/white" />
+    <stroke
+        android:width="1.5dp"
+        android:color="@color/theme_blue" />
+</shape>

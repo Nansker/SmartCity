@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ @author 南山客
+  ~ @email 2771557108@qq.com
+  ~ @create 2021/10/21 17:19
+  ~ @description
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:gravity="top"
+        android:start="-180dp"
+        android:top="-50dp"
+        android:end="-180dp">
+        <shape android:shape="oval"
+            android:useLevel="true">
+            <solid android:color="@color/theme_party"/>
+            <size android:height="150dp"/>
+        </shape>
+    </item>
+</layer-list>

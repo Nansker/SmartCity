@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @author 南山客
+  ~ @email 2771557108@qq.com
+  ~ @create 2021/10/09 12:52
+  ~ @description
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nansk.smartcity.activity.traffic.TrafficServiceActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:tabIndicatorColor="@color/theme_traffic"
+        android:overScrollMode="never"
+        app:tabTextAppearance="@android:style/TextAppearance.Holo"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabSelectedTextColor="@color/theme_traffic"
+        app:tabTextColor="@color/black_33" />
+
+    <com.nansk.smartcity.view.CustomViewPager
+        android:id="@+id/body_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @author 南山客
+  ~ @email 2771557108@qq.com
+  ~ @create 2021/10/13 11:43
+  ~ @description
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="0dp"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image_iv"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="120dp" />
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="名称"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black_33"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/pay_btn"
+        android:layout_width="60dp"
+        android:gravity="center"
+        android:layout_height="24dp"
+        android:text="购票"
+        android:textColor="@android:color/white"
+        android:stateListAnimator="@null"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp" />
+</LinearLayout>

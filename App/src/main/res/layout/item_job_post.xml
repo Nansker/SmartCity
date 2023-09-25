@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @Author 南山客
+  ~ @Email 2771557108@qq.com
+  ~ @Create 2021/09/30 20:10
+  ~ @Description
+  -->
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="岗位名称"
+                android:textColor="@color/black_33"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/salary_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18k"
+                android:textColor="@color/theme_job"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/obligation_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:lineSpacingExtra="3dp"
+                android:text="负责软件的设计开发测试以及上线"
+                android:textColor="@color/black_33"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/companyName_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="字节跳动"
+                android:paddingRight="6dp"
+                android:paddingLeft="6dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/gray_66"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/need_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="工作经验 1-2 年"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:maxWidth="220dp"
+                android:paddingRight="6dp"
+                android:paddingLeft="6dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/gray_66"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/contacts_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="马化腾"
+                android:textColor="@color/black_33"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/address_tv"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="红谷滩区 绿地中心"
+                android:textColor="@color/gray_66"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @author 南山客
+  ~ @email 2771557108@qq.com
+  ~ @create 2021/10/11 17:10
+  ~ @description
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/image_iv"
+        android:scaleType="centerCrop"
+        android:layout_width="90dp"
+        android:layout_height="90dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/claimPlace_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="认领地点"
+            android:textSize="16sp"
+            android:textColor="@color/black_33" />
+
+        <TextView
+            android:id="@+id/foundTime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="拾取时间"
+            android:textSize="16sp"
+            android:textColor="@color/black_33" />
+    </LinearLayout>
+
+</LinearLayout>

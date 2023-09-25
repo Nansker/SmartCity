@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @Author 南山客
+  ~ @Email 2771557108@qq.com
+  ~ @Create 2021/10/02 23:45
+  ~ @Description
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/part_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bck"
+    android:orientation="vertical"
+    tools:context="com.nansk.smartcity.activity.traffic.TrafficAddCardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/changeType_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="号牌类型"
+                android:textColor="@color/black_33"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/plateType_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="小型汽车"
+                android:textColor="@color/black_33"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:rotation="-90"
+                android:src="@mipmap/right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="0.5dp"
+            android:background="@color/divider_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="号牌号码"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/plateNum_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@android:color/transparent"
+                android:hint="请输入号牌号码"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="0.5dp"
+            android:background="@color/divider_gray" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addCar_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="查询"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/tips_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text="数据加载中..."
+        android:visibility="gone"
+        android:layout_margin="30dp"
+        android:textColor="@color/gray_66"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/keyBoard_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:keyBackground="@drawable/keyboard_style"
+            android:keyTextColor="@color/black_33"
+            android:keyTextSize="15sp"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:shadowColor="@android:color/transparent" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @Author 南山客
+  ~ @Email 2771557108@qq.com
+  ~ @Create 2021/09/07 19:42
+  ~ @Description
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nansk.smartcity.GuidePagerActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/nets_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/transparent"
+        android:text="网络设置"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/begin_btn"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/guide_pager_btn_style"
+        android:text="开始体验"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/indicator_box"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:clickable="true"
+            android:src="@drawable/indicator_set_style" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="8dp"
+            android:clickable="true"
+            android:src="@drawable/indicator_set_style" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="8dp"
+            android:clickable="true"
+            android:src="@drawable/indicator_set_style" />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="8dp"
+            android:clickable="true"
+            android:src="@drawable/indicator_set_style"  />
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="8dp"
+            android:clickable="true"
+            android:src="@drawable/indicator_set_style"  />
+    </LinearLayout>
+
+
+</RelativeLayout>

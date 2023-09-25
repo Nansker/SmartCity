@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ @Author 南山客
+  ~ @Email 2771557108@qq.com
+  ~ @Create 2021/09/07 22:23
+  ~ @Description 未选中状态引导点样式
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<corners android:radius="100dp"/>
+    <solid android:color="#73FFFFFF"/>
+</shape>

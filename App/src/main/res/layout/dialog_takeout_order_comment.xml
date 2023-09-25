@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @Author 南山客
+  ~ @Email 2771557108@qq.com
+  ~ @Create 2021/09/24 16:30
+  ~ @Description
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bck"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="订单评价"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black_33"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/body_text_box_style"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/body_et"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@android:color/transparent"
+            android:gravity="start"
+            android:hint="评论"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/score_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/takeout_btn_style"
+        android:stateListAnimator="@null"
+        android:text="发送"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ @author 南山客
+  ~ @email 2771557108@qq.com
+  ~ @create 2021/10/03 19:28
+  ~ @description
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<corners android:radius="5dp"/>
+    <solid android:color="@android:color/white"/>
+    <stroke android:width="0.5dp" android:color="@color/gray_99"/>
+</shape>

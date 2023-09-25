@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @Author 南山客
+  ~ @Email 2771557108@qq.com
+  ~ @Create 2021/09/07 17:37
+  ~ @Description
+  -->
+
+<resources>
+    <color name="colorPrimary">#999999</color>
+    <color name="colorPrimaryDark">#999999</color>
+    <color name="colorAccent">#009688</color>
+
+    <!--    主题色-->
+    <color name="theme_blue">#007aff</color>
+    <color name="theme_pink">#ff3e5d</color>
+    <color name="theme_orange">#FF9800</color>
+    <!--外卖-->
+    <color name="theme_takeout">#FFC107</color>
+<!--    智慧养老-->
+    <color name="theme_pension">#B07EEF</color>
+<!--    精准扶贫-->
+    <color name="theme_support">#dd5952</color>
+
+    <!--找工作-->
+    <color name="theme_job">#37c2bb</color>
+    <!--智慧交管-->
+    <color name="theme_traffic">#2c65a8</color>
+    <!--城市地铁-->
+    <color name="theme_metro">#ca062c</color>
+<!--    智慧党键-->
+    <color name="theme_party">#f23d3d</color>
+
+<!--    智慧环保-->
+    <color name="theme_green">#22bf76</color>
+
+    <!--背景色-->
+    <color name="theme_bck">#f2f2f2</color>
+
+    <!--天气-->
+    <color name="weather_bck">#639fd5</color>
+
+    <!--    分割线颜色-->
+    <color name="divider_gray">#e6e6e6</color>
+
+    <!--    文本颜色-->
+    <color name="black_33">#333333</color>
+    <color name="gray_66">#666666</color>
+    <color name="gray_99">#999999</color>
+    <color name="black_overlay">#66000000</color>
+</resources>

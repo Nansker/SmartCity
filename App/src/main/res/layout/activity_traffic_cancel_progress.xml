@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @author 南山客
+  ~ @email 2771557108@qq.com
+  ~ @create 2021/10/04 20:40
+  ~ @description
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bck"
+    android:orientation="vertical"
+    tools:context="com.nansk.smartcity.activity.traffic.TrafficIllegalProcessing2Activity">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:overScrollMode="never"
+        app:tabIndicatorColor="@color/theme_traffic"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabSelectedTextColor="@color/theme_traffic"
+        app:tabTextAppearance="@android:style/TextAppearance.Holo"
+        app:tabTextColor="@color/black_33" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/body_container"
+            android:layout_below="@id/tab_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never" />
+
+    <TextView
+        android:id="@+id/tips_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/gray_99"
+        android:textSize="16dp" />
+</RelativeLayout>

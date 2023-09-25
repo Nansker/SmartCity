@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ @Author 南山客
+  ~ @Email 2771557108@qq.com
+  ~ @Create 2021/09/07 23:39
+  ~ @Description
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_selected="true" android:drawable="@drawable/indicator_selected_style"/>
+<item android:state_selected="false" android:drawable="@drawable/indicator_unselected_style"/>
+</selector>

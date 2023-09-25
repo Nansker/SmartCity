@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @Author 南山客
+  ~ @Email 2771557108@qq.com
+  ~ @Create 2021/09/08 10:32
+  ~ @Description 标题栏
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@android:color/white">
+
+
+    <ImageButton
+        android:id="@+id/back_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:id="@+id/leftTitle_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/back_bar"
+        android:ellipsize="end"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black_33"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/title_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLength="13"
+        android:maxLines="1"
+        android:textColor="@color/black_33"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/fun_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black_33"
+        android:textSize="15sp" />
+</RelativeLayout>

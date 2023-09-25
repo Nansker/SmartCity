@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @Author 南山客
+  ~ @Email 2771557108@qq.com
+  ~ @Create 2021/09/18 16:49
+  ~ @Description
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <com.nansk.smartcity.view.CustomViewPager
+        android:id="@+id/body_container"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/divider_gray"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/bottom_tab_layout"
+        android:layout_width="match_parent"
+        app:tabIndicatorHeight="0dp"
+        android:background="@android:color/white"
+        app:tabRippleColor="@android:color/transparent"
+        android:layout_height="50dp"/>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @author 南山客
+  ~ @email 2771557108@qq.com
+  ~ @create 2021/10/11 15:46
+  ~ @description
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/userInfo_box"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/avatar_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/main_user_icon_blod"
+        android:src="@drawable/user_icon" />
+
+    <TextView
+        android:id="@+id/nickName_tv"
+        android:gravity="center"
+        android:textColor="@color/black_33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="登录/注册\n请点击头像登录"
+        android:textSize="16sp" />
+
+</LinearLayout>

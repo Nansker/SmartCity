@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @Author 南山客
+  ~ @Email 2771557108@qq.com
+  ~ @Create 2021/09/17 10:09
+  ~ @Description
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bck"
+    android:orientation="vertical"
+
+    tools:context="com.nansk.smartcity.activity.hospital.HospitalActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:focusable="false"
+            android:theme="@style/searchStyle"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@null"
+            app:queryHint="搜索" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:text="取消"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/black_33"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:indicator_height="6dp"
+            app:indicator_margin="3dp"
+            app:indicator_width="6dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/body_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:overScrollMode="never" />
+
+            <Button
+                android:id="@+id/update_btn"
+                android:text="重新加载"
+                android:textColor="@color/gray_99"
+                android:textSize="14sp"
+                android:stateListAnimator="@null"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="42dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

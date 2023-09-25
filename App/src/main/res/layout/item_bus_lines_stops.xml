@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @Author 南山客
+  ~ @Email 2771557108@qq.com
+  ~ @Create 2021/09/16 19:28
+  ~ @Description
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/bus_iv"
+        android:src="@drawable/bus2"
+        android:layout_width="36dp"
+        android:layout_marginBottom="3dp"
+        android:layout_height="36dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/left_line"
+            android:orientation="horizontal"
+            android:layout_width="30dp"
+            android:layout_height="2dp"
+            android:background="@color/theme_blue" />
+
+        <ImageView
+            android:id="@+id/current_iv"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/yuan164" />
+
+        <LinearLayout
+            android:id="@+id/right_line"
+            android:orientation="horizontal"
+            android:layout_width="30dp"
+            android:layout_height="2dp"
+            android:background="@color/theme_blue" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="1"
+        android:gravity="center_horizontal"
+        android:text="站点名称"
+        android:textColor="@color/black_33"
+        android:textSize="16sp" />
+</LinearLayout>

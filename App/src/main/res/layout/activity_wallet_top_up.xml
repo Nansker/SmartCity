@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @author 南山客
+  ~ @email 2771557108@qq.com
+  ~ @create 2021/10/12 10:37
+  ~ @description
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.nansk.smartcity.activity.BalanceTopUpActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="充值账户:"
+            android:textColor="@color/black_33"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/userName_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="南山客"
+            android:textColor="@color/black_33"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="余额："
+            android:textColor="@color/black_33"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/balance_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10000"
+            android:textColor="@color/theme_pink"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="元"
+            android:textColor="@color/black_33"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/divider_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择充值金额"
+            android:textColor="@color/black_33"
+            android:textSize="14sp" />
+
+        <GridLayout
+            android:id="@+id/change_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:columnCount="3">
+
+            <TextView
+                android:id="@+id/change_1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:text="50元"
+                android:layout_margin="5dp"
+                android:textColor="@color/gray_66"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/change_2"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:text="100元"
+                android:layout_margin="5dp"
+                android:textColor="@color/gray_66"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/change_3"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:text="200元"
+                android:textColor="@color/gray_66"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/change_4"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:text="500元"
+                android:layout_margin="5dp"
+                android:textColor="@color/gray_66"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/change_5"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:text="1000元"
+                android:layout_margin="5dp"
+                android:textColor="@color/gray_66"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/change_6"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:text="自定义金额"
+                android:layout_margin="5dp"
+                android:textColor="@color/gray_66"
+                android:textSize="14sp" />
+        </GridLayout>
+
+
+        <LinearLayout
+            android:id="@+id/money_et_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:background="@drawable/main_money_border"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充值金额:"
+                android:textColor="@color/black_33"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/money_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:hint="请输入充值金额"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/divider_gray" />
+
+    <LinearLayout
+        android:id="@+id/payment_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已选择支付方式"
+            android:textColor="@color/black_33"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/paymentType_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="微信支付"
+            android:textColor="@color/black_33"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="10dp"
+            android:rotation="-90"
+            android:src="@mipmap/right" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/topUp_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确认充值"
+            android:stateListAnimator="@null"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

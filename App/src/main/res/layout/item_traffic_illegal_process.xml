@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @author 南山客
+  ~ @email 2771557108@qq.com
+  ~ @create 2021/10/04 21:19
+  ~ @description
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/trafficOffence_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="违章类型"
+        android:textColor="@color/black_33"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/illegalSites_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="地点"
+        android:textColor="@color/black_33"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/badTime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日期"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black_33"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/badTime_tv"
+            android:background="#0DCC0000"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:paddingLeft="6dp"
+            android:paddingTop="5dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/money_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="罚款100元"
+                android:textColor="#F44336"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/deductMarks_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="记3分"
+                android:textColor="#F44336"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/dispose_btn"
+            android:layout_width="72dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:text="接受处理"
+            android:padding="0dp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

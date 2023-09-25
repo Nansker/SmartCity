@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @author 南山客
+  ~ @email 2771557108@qq.com
+  ~ @create 2021/10/14 17:55
+  ~ @description
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/theme_bck"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nansk.smartcity.activity.movie.MoviePressActivity">
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/divider_gray"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:tabIndicatorHeight="0dp"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabSelectedTextColor="@color/theme_pink"
+        app:tabTextAppearance="@android:style/TextAppearance.Holo"
+        app:tabTextColor="@color/black_33" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/body_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never" />
+
+    <TextView
+        android:id="@+id/tips_tv"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_66"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"
+        android:text="星闻加载中..." />
+</LinearLayout>

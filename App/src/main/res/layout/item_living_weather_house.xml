@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @Author 南山客
+  ~ @Email 2771557108@qq.com
+  ~ @Create 2021/09/30 14:54
+  ~ @Description
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/weather_bck"
+    android:gravity="center"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/hour_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:00"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_iv"
+            android:layout_width="18dp"
+            android:layout_height="24dp"
+            android:src="@drawable/weather" />
+        <TextView
+            android:id="@+id/weather_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="晴"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/temperature_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="31℃"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

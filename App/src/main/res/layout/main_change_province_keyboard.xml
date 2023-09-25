@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @Author 南山客
+  ~ @Email 2771557108@qq.com
+  ~ @Create 2021/10/03 14:31
+  ~ @Description
+  -->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:horizontalGap="0.0dp"
+    android:keyWidth="8%"
+    android:keyHeight="38dp"
+    android:verticalGap="0.0dp">
+
+    <Row android:verticalGap="10dp">
+
+        <Key
+            android:codes="1"
+            android:horizontalGap="1.8%"
+            android:keyEdgeFlags = "left"
+            android:keyLabel="京" />
+
+        <Key
+            android:codes="2"
+            android:horizontalGap="1.8%"
+            android:keyLabel="津" />
+
+        <Key
+            android:codes="3"
+            android:horizontalGap="2%"
+            android:keyLabel="渝" />
+
+        <Key
+            android:codes="4"
+            android:horizontalGap="1.8%"
+            android:keyLabel="沪" />
+
+        <Key
+            android:codes="5"
+            android:horizontalGap="1.8%"
+            android:keyLabel="冀" />
+
+        <Key
+            android:codes="6"
+            android:horizontalGap="1.8%"
+            android:keyLabel="晋" />
+
+        <Key
+            android:codes="7"
+            android:horizontalGap="1.8%"
+            android:keyLabel="辽" />
+
+        <Key
+            android:codes="8"
+            android:horizontalGap="1.8%"
+
+            android:keyLabel="吉" />
+
+        <Key
+            android:codes="9"
+            android:horizontalGap="1.8%"
+            android:keyLabel="黑" />
+
+        <Key
+            android:codes="10"
+            android:horizontalGap="1.8%"
+            android:keyLabel="苏" />
+    </Row>
+
+    <Row android:verticalGap="10dp">
+
+        <Key
+            android:codes="11"
+            android:horizontalGap="1.8%"
+            android:keyLabel="浙" />
+
+        <Key
+            android:codes="12"
+            android:horizontalGap="1.8%"
+            android:keyLabel="皖" />
+
+        <Key
+            android:codes="13"
+            android:horizontalGap="1.8%"
+            android:keyLabel="闽" />
+
+        <Key
+            android:codes="14"
+            android:horizontalGap="1.8%"
+            android:keyLabel="赣" />
+
+        <Key
+            android:codes="15"
+            android:horizontalGap="1.8%"
+            android:keyLabel="鲁" />
+
+        <Key
+            android:codes="16"
+            android:horizontalGap="1.8%"
+            android:keyLabel="豫" />
+
+        <Key
+            android:codes="17"
+            android:horizontalGap="1.8%"
+            android:keyLabel="鄂" />
+
+        <Key
+            android:codes="18"
+            android:horizontalGap="1.8%"
+            android:keyLabel="湘" />
+
+        <Key
+            android:codes="19"
+            android:horizontalGap="1.8%"
+            android:keyLabel="粤" />
+
+        <Key
+            android:codes="20"
+            android:horizontalGap="1.8%"
+            android:keyLabel="琼" />
+    </Row>
+
+    <Row android:verticalGap="10dp">
+
+        <Key
+            android:codes="21"
+            android:horizontalGap="1.8%"
+            android:keyLabel="川" />
+
+        <Key
+            android:codes="22"
+            android:horizontalGap="1.8%"
+            android:keyLabel="贵" />
+
+        <Key
+            android:horizontalGap="1.8%"
+            android:codes="23"
+            android:keyLabel="云" />
+
+        <Key
+            android:codes="24"
+            android:horizontalGap="1.8%"
+            android:keyLabel="陕" />
+
+        <Key
+            android:codes="25"
+            android:horizontalGap="1.8%"
+            android:keyLabel="甘" />
+
+        <Key
+            android:horizontalGap="1.8%"
+            android:codes="26"
+            android:keyLabel="青" />
+
+        <Key
+            android:codes="27"
+            android:horizontalGap="1.8%"
+            android:keyLabel="蒙" />
+
+        <Key
+            android:codes="28"
+            android:horizontalGap="1.8%"
+            android:keyLabel="贵" />
+
+        <Key
+            android:codes="29"
+            android:horizontalGap="1.8%"
+            android:keyLabel="宁" />
+
+
+        <Key
+            android:codes="30"
+            android:horizontalGap="1.8%"
+            android:keyLabel="新" />
+    </Row>
+
+    <Row android:verticalGap="10dp">
+
+        <Key
+            android:codes="-2"
+            android:keyWidth="20%"
+            android:horizontalGap="1.8%"
+            android:keyLabel="收起" />
+
+        <Key
+            android:codes="31"
+            android:horizontalGap="1.8%"
+            android:keyLabel="藏" />
+
+        <Key
+            android:codes="32"
+            android:horizontalGap="1.8%"
+            android:keyLabel="使" />
+
+        <Key
+            android:codes="33"
+            android:horizontalGap="1.8%"
+            android:keyLabel="领" />
+
+        <Key
+            android:codes="34"
+            android:horizontalGap="1.8%"
+            android:keyLabel="警" />
+
+        <Key
+            android:codes="35"
+            android:horizontalGap="1.8%"
+            android:keyLabel="学" />
+
+        <Key
+            android:horizontalGap="1.8%"
+            android:codes="36"
+            android:keyLabel="港" />
+
+        <Key
+            android:horizontalGap="1.8%"
+            android:codes="37"
+            android:keyLabel="澳" />
+
+        <Key
+            android:codes="-3"
+            android:keyWidth="20%"
+            android:horizontalGap="1.8%"
+            android:isRepeatable="true"
+            android:keyLabel="删除" />
+    </Row>
+</Keyboard>

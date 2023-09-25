@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @author 南山客
+  ~ @email 2771557108@qq.com
+  ~ @create 2021/10/17 08:33
+  ~ @description
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nansk.smartcity.fragment.DesignFragment">
+
+    <GridLayout
+        android:id="@+id/tab_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:columnCount="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowSpan="3"
+            android:layout_rowWeight="1"
+            android:padding="5dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:background="@color/theme_orange"
+            android:gravity="center"
+            android:text="智慧党建"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_rowWeight="1"
+            android:padding="5dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:background="@color/theme_orange"
+            android:gravity="center"
+            android:text="精准扶贫"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="3dp"
+            android:padding="5dp"
+            android:background="@color/theme_orange"
+            android:gravity="center"
+            android:text="智慧社区"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:padding="5dp"
+            android:layout_margin="3dp"
+            android:background="@color/theme_orange"
+            android:gravity="center"
+            android:text="智慧养老"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_columnSpan="3"
+            android:layout_columnWeight="1"
+            android:padding="5dp"
+            android:layout_margin="3dp"
+            android:background="@color/theme_orange"
+            android:gravity="center"
+            android:text="智慧环保"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </GridLayout>
+
+</LinearLayout>

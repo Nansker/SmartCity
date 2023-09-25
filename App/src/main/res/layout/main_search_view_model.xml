@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @Author 南山客
+  ~ @Email 2771557108@qq.com
+  ~ @Create 2021/09/10 16:01
+  ~ @Description
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_container"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="@drawable/comment_box_style"
+        android:theme="@style/searchStyle"
+        app:iconifiedByDefault="false"
+        android:focusable="false"
+        app:queryBackground="@null"
+        app:queryHint="搜索" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:text="取消"
+        android:textColor="@color/black_33"
+        android:textSize="15sp" />
+</LinearLayout>

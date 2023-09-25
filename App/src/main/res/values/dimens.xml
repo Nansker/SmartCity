@@ -1,0 +1,10 @@
+<!--
+  ~ @author 南山客
+  ~ @email 2771557108@qq.com
+  ~ @create 2021/10/13 08:34
+  ~ @description
+  -->
+
+<resources>
+    <dimen name="text_margin">16dp</dimen>
+</resources>

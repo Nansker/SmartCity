@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @author 南山客
+  ~ @email 2771557108@qq.com
+  ~ @create 2021/10/19 09:59
+  ~ @description
+  -->
+
+<!--
+  ~ @author 南山客
+  ~ @email 2771557108@qq.com
+  ~ @create 2021/10/12 08:53
+  ~ @description
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+    <item
+        android:end="-100dp"
+        android:gravity="top"
+        android:start="-100dp"
+        android:top="-30dp">
+        <shape
+            android:shape="oval"
+            android:useLevel="true">
+            <solid android:color="@color/theme_pension" />
+            <size android:height="120dp" />
+        </shape>
+    </item>
+</layer-list>

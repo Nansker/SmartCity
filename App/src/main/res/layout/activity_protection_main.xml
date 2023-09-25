@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ @author 南山客
+  ~ @email 2771557108@qq.com
+  ~ @create 2021/10/17 10:10
+  ~ @description
+  -->
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bck"
+    tools:context="com.nansk.smartcity.design.protection.ProtectionMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="160dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <GridLayout
+            android:id="@+id/tab_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:columnCount="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowSpan="2"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="2"
+                android:layout_margin="3dp"
+                android:background="@android:color/white"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="分类课堂"
+                    android:textColor="@color/gray_66"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/image_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="72dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/ep_group1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="3"
+                android:layout_margin="3dp"
+                android:background="@android:color/white"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="上门回收"
+                    android:textColor="@color/gray_66"
+                    android:textSize="17sp"/>
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:id="@+id/image_2"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ep_group2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_columnWeight="3"
+                android:layout_margin="3dp"
+                android:background="@android:color/white"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="回收站点"
+                    android:textColor="@color/gray_66"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/image_iv"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ep_group3" />
+            </RelativeLayout>
+
+        </GridLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

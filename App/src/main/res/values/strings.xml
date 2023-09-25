@@ -1,0 +1,118 @@
+<!--
+  ~ @Author 南山客
+  ~ @Email 2771557108@qq.com
+  ~ @Create 2021/09/07 17:37
+  ~ @Description
+  -->
+
+<resources>
+    <string name="app_name">智慧城市</string>
+
+    <string name="theme_party">#f23d3d</string>
+    <!--    智慧养老-->
+    <string name="theme_pension">#b07eef</string>
+
+    <string-array name="party_press_category">
+        <item>看党史</item>
+        <item>看教育</item>
+        <item>学习视频</item>
+        <item>看理论</item>
+        <item>看人物</item>
+        <item>智能融媒</item>
+        <item>读书频道</item>
+    </string-array>
+
+    <!--    底部导航栏-->
+    <string-array name="bottom_nav_text">
+        <item>首页</item>
+        <item>全部服务</item>
+        <item>新闻</item>
+        <item>个人中心</item>
+    </string-array>
+
+    <string-array name="service_primary_class">
+        <item>车主服务</item>
+        <item>生活服务</item>
+        <item>便民服务</item>
+    </string-array>
+
+    <string-array name="press_category_names">
+        <item>今日要闻</item>
+        <item>专题聚焦</item>
+        <item>政策解读</item>
+        <item>经济发展</item>
+        <item>文化旅游</item>
+        <item>科技创新</item>
+    </string-array>
+
+
+    <string-array name="takeout_person_menu_names">
+        <item>地址管理</item>
+        <item>我的收藏</item>
+        <item>我的订单</item>
+    </string-array>
+
+    <string-array name="takeout_order_menu_names">
+        <item>全部</item>
+        <item>待支付</item>
+        <item>待评价</item>
+        <item>退款</item>
+        <item>完成</item>
+    </string-array>
+
+    <string-array name="house_menu_names">
+        <item>二手</item>
+        <item>租房</item>
+        <item>楼盘</item>
+        <item>中介</item>
+    </string-array>
+    <string-array name="phone_operator">
+        <item>中国移动</item>
+        <item>中国联通</item>
+        <item>中国电信</item>
+    </string-array>
+
+    <string-array name="hot_jobs">
+        <item>软件开发</item>
+        <item>模特</item>
+        <item>医生</item>
+        <item>前端</item>
+    </string-array>
+
+    <string-array name="traffic_aap">
+        <item>违章处理</item>
+        <item>缴纳罚款</item>
+        <item>违章撤销</item>
+        <item>服务网点</item>
+    </string-array>
+
+    <string-array name="traffic_plate_type">
+        <item>小型汽车</item>
+        <item>大型新能源汽车</item>
+        <item>大型汽车</item>
+        <item>小型新能源汽车</item>
+        <item>领馆汽车</item>
+        <item>警用汽车</item>
+    </string-array>
+
+    <!--    地铁线路颜色 按顺序排列-->
+    <string-array name="metro_line_colors">
+        <item>#c43a30</item>
+        <item>#016098</item>
+        <item>#008d9e</item>
+        <item>#a72180</item>
+        <item>#d19501</item>
+        <item>#fac575</item>
+        <item>#009b6b</item>
+        <item>#8cc717</item>
+        <item>#019bc1</item>
+        <item>#f9e701</item>
+        <item>#d6a7a1</item>
+        <item>#5c2c6a</item>
+        <item>#558338</item>
+        <item>#e40177</item>
+        <item>#e40177</item>
+        <item>#a29bbc</item>
+        <item>#e46022</item>
+    </string-array>
+</resources>
